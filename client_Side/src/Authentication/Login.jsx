@@ -18,7 +18,7 @@ const Login = () => {
     e.preventDefault();
   
     try {
-      const response = await axios.post('http://localhost:4000/auth/login', {
+      const response = await axios.post('https://recipe-app-backend-2.onrender.com/login', {
         email,
         password,
       });

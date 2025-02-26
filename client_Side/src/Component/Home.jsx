@@ -37,7 +37,7 @@ export const Home = () => {
   async function fetchRecipes() {
     setIsLoading(true);
     try {
-      const response = await fetch("http://localhost:4000/auth/data");
+      const response = await fetch("https://recipe-app-backend-2.onrender.com/auth/data");
       const jsonData = await response.json();
       if (jsonData?.recipes?.length > 0) {
         setRecipesData(jsonData.recipes);
